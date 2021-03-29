@@ -105,6 +105,6 @@ const p1 = new Promise((resolve, reject) => {
     }, 4000);
   });
 
-
+// Waits until the longest (Time wise) Promise is complete before it runs the ".then"  (AKA Callback function)
   Promise.all([p1,p2,p3])
   .then(values => console.log(values));
